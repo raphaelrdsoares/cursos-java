@@ -19,9 +19,6 @@ public class CategoryController {
 
     public CategoryController() {
         super();
-        // list.add(new Category(1L, "Eletronicos"));
-        // list.add(new Category(2L, "Livros"));
-        // list.add(new Category(3L, "Testes"));
     }
 
     @GetMapping
@@ -32,7 +29,7 @@ public class CategoryController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Category> findById(@PathVariable Long id) {
-        Category category = categoryRepository.findById(id);
+        Category category = categoryRepository.findById(id).get();
         return ResponseEntity.ok(category);
     }
 }
