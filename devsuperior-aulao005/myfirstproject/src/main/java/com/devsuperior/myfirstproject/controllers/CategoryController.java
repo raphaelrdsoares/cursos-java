@@ -2,7 +2,6 @@ package com.devsuperior.myfirstproject.controllers;
 
 import com.devsuperior.myfirstproject.entities.Category;
 import com.devsuperior.myfirstproject.repositories.CategoryRepository;
-import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
